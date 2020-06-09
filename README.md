@@ -7,7 +7,7 @@ No he seguido exactamente los pasos a seguir en la validación del formulario po
 El ejercicio consiste en representar en HTML + CSS (únicamente el body) la siguiente
 pantalla:
 
-![form](form.png)
+![form](form.PNG)
 
 Por último, crear una función en javascript que valide el formulario con la siguientes
 restricciones:
