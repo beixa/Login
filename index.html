@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="img/cabecera.png" />
+      <h1>Especifíca tus datos personales:</h1>
+      <form onsubmit="valid()">
+        <div class="row">
+          <div class="column">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" maxlength="10" required/>
+          </div>
+          <div class="column">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" maxlength="20" required/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="tlf">Teléfono</label>
+            <input type="tel" id="tlf" name="tlf" maxlength="9" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+          </div>
+          <div class="column">
+            <label for="mail">Correo electrónico</label>
+            <input type="text" id="mail" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo">
+              <option value="hombre">Hombre</option>
+              <option value="mujer">Mujer</option>
+            </select>
+          </div>
+          <div class="column"></div>
+        </div>
+        <input type="submit" value="Guardar" />
+      </form>
+    </div>    
+  </body>
+</html>
