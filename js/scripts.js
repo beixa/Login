@@ -1,5 +1,6 @@
-  valid = () => {   
-        alert("El formulario se ha rellenado con exito 👌") 
+  valid = (e) => {
+        e.preventDefault();   
+        document.getElementById("mensaje").style.display="block"; 
 }
 
 

@@ -12,7 +12,7 @@
     <div class="container">
       <img src="img/cabecera.png" />
       <h1>Especifíca tus datos personales:</h1>
-      <form onsubmit="valid()">
+      <form onsubmit="valid(event)">
         <div class="row">
           <div class="column">
             <label for="nombre">Nombre</label>
@@ -45,6 +45,7 @@
         </div>
         <input type="submit" value="Guardar" />
       </form>
+      <div id="mensaje">"El formulario se ha rellenado con exito 👌"</div>
     </div>    
   </body>
 </html>
